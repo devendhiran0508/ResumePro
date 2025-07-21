@@ -9,9 +9,22 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="ResumePro", page_icon=":guardsman:", layout="centered")
-st.title("ResumePro")
-st.markdown("Upload your resume and get feedback!")
+st.markdown("""
+<h2 style="text-align:center;" class="fade-in">🚀 Welcome to <span style='color:#6C63FF'>ResumePro</span></h2>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
+.fade-in {
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+""", unsafe_allow_html=True)
 
+st.markdown("<p style='text-align:center;'>Upload your resume and get smart, AI-powered feedback tailored to your job role!</p>", unsafe_allow_html=True)
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") 
 
@@ -20,8 +33,8 @@ if not GOOGLE_API_KEY:
     st.error("Google API Key not found. Please set the GOOGLE_API_KEY environment variable in your .env file.")
     st.stop()
 
-uploaded_file = st.file_uploader("Upload your resume (PDF or TXT)", type=["pdf","txt"])
-job_role = st.text_input("Enter the job role you are applying for")
+uploaded_file = st.file_uploader("📄 Upload your resume (PDF or TXT)", type=["pdf","txt"])
+job_role = st.text_input("💼 Enter the job role you are applying for")
 analyse = st.button("Analyse Resume")
 
 def extract_text_from_pdf(pdf_file):
@@ -67,13 +80,10 @@ if analyse and uploaded_file:
             {file_content}
             Please provide your analysis in a clear, structured format with specific recommendations."""
             
-            # Configure the generative AI model
             genai.configure(api_key=GOOGLE_API_KEY)
             
-            # *** IMPORTANT CHANGE: Using gemini-2.0-flash as per instructions ***
             model = genai.GenerativeModel("gemini-2.0-flash") 
             
-            # Generate content from the model
             response = model.generate_content(prompt)
             
             st.markdown("### Analysis Result")

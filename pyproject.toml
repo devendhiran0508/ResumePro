@@ -9,4 +9,5 @@ dependencies = [
     "pypdf2>=3.0.1",
     "python-dotenv>=1.1.1",
     "streamlit>=1.47.0",
+    "streamlit-lottie>=0.0.5",
 ]
