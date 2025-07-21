@@ -61,8 +61,8 @@ uv run streamlit run main.py
 
 ---
 
-## 🖼️ Preview (Optional)
-![output images](outputs\image.png)
+## 🖼️ Preview 
+![output images](outputs/image.png)
 
 _Add screenshots or demo GIFs here to show how it works._
 
