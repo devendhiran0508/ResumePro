@@ -13,7 +13,7 @@ ResumePro is a simple yet powerful AI-driven resume analyzer that helps job seek
   - Content clarity & tone  
   - Skills & experience alignment  
   - Job role targeting  
-  
+
 ---
 
 ## 📦 Tech Stack
@@ -62,6 +62,7 @@ uv run streamlit run main.py
 ---
 
 ## 🖼️ Preview (Optional)
+![output images](outputs\image.png)
 
 _Add screenshots or demo GIFs here to show how it works._
 
