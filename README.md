@@ -62,7 +62,10 @@ uv run streamlit run main.py
 ---
 
 ## 🖼️ Preview 
-![output images](outputs/image.png)
+![output image 1](outputs/image.png)
+![output image 2](outputs/image2.png)
+![output image 3](outputs/image3.png)
+![output image 4](outputs/image4.png)
 
 _Add screenshots or demo GIFs here to show how it works._
 
