@@ -67,13 +67,7 @@ uv run streamlit run main.py
 ![output image 3](outputs/image3.png)
 ![output image 4](outputs/image4.png)
 
-_Add screenshots or demo GIFs here to show how it works._
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
+_Added screenshots to show how it works._
 
 ---
 
