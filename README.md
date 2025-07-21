@@ -13,8 +13,7 @@ ResumePro is a simple yet powerful AI-driven resume analyzer that helps job seek
   - Content clarity & tone  
   - Skills & experience alignment  
   - Job role targeting  
-- 🛡️ API key is securely stored using a `.env` file
-
+  
 ---
 
 ## 📦 Tech Stack
